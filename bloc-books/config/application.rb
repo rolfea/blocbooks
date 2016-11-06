@@ -1,4 +1,4 @@
-require "bloc_works"
+require_relative '../../bloc_works/lib/bloc_works.rb'
 
 $LOAD_PATH << File.join(File.dirname(__FILE__), "..", "app", "controllers")
 
