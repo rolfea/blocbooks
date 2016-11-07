@@ -1,6 +1,6 @@
 class BooksController < BlocWorks::Controller
   def welcome
-    @test = "test"    
+    @test = "test"
     render :welcome, book: "Eloquent Ruby"
   end
 
@@ -9,14 +9,14 @@ class BooksController < BlocWorks::Controller
   end
 
   def read
-    render :welcome, book: "read"
+    render :welcome, book: "Read"
   end
 
   def update
-    render :welcome, book: "update"
+    render :welcome, book: "Update"
   end
 
   def destroy
-    render :welcome, book: "destroy"
+    render :welcome, book: "Destroy"
   end
 end
