@@ -2,11 +2,11 @@ require_relative '../config/application.rb'
 require 'test/unit'
 require 'rack/test'
 
-class BlocWorksRouterTest < Test::Unit::TestCase
+class BlocBooksControllerTest < Test::Unit::TestCase
   include Rack::Test::Methods
 
   def app
-    Application::Application.new
+    BlocBooks::Application.new
   end
 
   def test_it_routes_http_to_controller_and_action
