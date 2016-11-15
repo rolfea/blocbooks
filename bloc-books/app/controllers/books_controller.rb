@@ -1,3 +1,5 @@
+require 'pry'
+
 class BooksController < BlocWorks::Controller
   def welcome
     @test = "test"
@@ -6,6 +8,11 @@ class BooksController < BlocWorks::Controller
 
   def index
     render :index, books: Book.all
+  end
+
+  def show
+    binding.pry
+    render :show, book: Book.find(1)
   end
 
   def create
